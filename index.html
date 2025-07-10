@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Gestão de Materiais</title>
+    <title>Sistema de Controle de Instrumentos</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
         <!-- Sidebar -->
         <nav class="sidebar">
             <div class="sidebar-header">
-                <h2><i class="fas fa-boxes"></i> Gestão de Materiais</h2>
+                <h2><i class="fas fa-boxes"></i> Controle de Intrumentos</h2>
             </div>
             <ul class="sidebar-menu">
                 <li class="menu-item active" data-page="dashboard">
@@ -46,7 +46,7 @@
                 <div class="page-header">
                     <div>
                         <h1><i class="fas fa-chart-line"></i> Dashboard</h1>
-                        <p>Visão geral do sistema de gestão de materiais</p>
+                        <p>Visão geral do sistema de controle de instrumentos</p>
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3><i class="fas fa-clock"></i> Últimas Movimentações</h3>
-                            <p>Movimentações recentes de materiais</p>
+                            <p>Movimentações recentes de instrumentos</p>
                         </div>
                         <div class="card-content" id="recentMovementsContent">
                             <div class="empty-state-small">
@@ -146,8 +146,8 @@
                 <!-- Materials Table -->
                 <div class="card">
                     <div class="card-header">
-                        <h3>Lista de Materiais (<span id="materialCount">0</span>)</h3>
-                        <p>Gerencie todos os materiais do sistema</p>
+                        <h3>Lista de Instrumentos (<span id="materialCount">0</span>)</h3>
+                        <p>Gerencie todos os instrumentos do sistema</p>
                     </div>
                     <div class="card-content">
                         <div class="table-container">
@@ -227,7 +227,7 @@
                 <div class="page-header">
                     <div>
                         <h1><i class="fas fa-exchange-alt"></i> Controle de Entrada/Saída</h1>
-                        <p>Registre a movimentação de materiais</p>
+                        <p>Registre a movimentação de intrumentos</p>
                     </div>
                 </div>
 
@@ -240,7 +240,7 @@
                             </div>
                             <div class="card-content">
                                 <div class="form-group">
-                                    <label><i class="fas fa-box"></i> Código ou Nome do Material</label>
+                                    <label><i class="fas fa-box"></i> Código ou Nome do Instrumento</label>
                                     <div class="search-input">
                                         <i class="fas fa-search"></i>
                                         <input type="text" id="materialSearchEntry" placeholder="Ex: 1.1.17.001.001 ou Plástico Magnético">
@@ -260,12 +260,12 @@
                             <button class="btn btn-success btn-large" id="entradaBtn">
                                 <i class="fas fa-arrow-down"></i>
                                 <span>ENTRADA</span>
-                                <small>Devolver Material</small>
+                                <small>Devolver Instrumento</small>
                             </button>
                             <button class="btn btn-warning btn-large" id="saidaBtn">
                                 <i class="fas fa-arrow-up"></i>
                                 <span>SAÍDA</span>
-                                <small>Retirar Material</small>
+                                <small>Retirar Instrumento</small>
                             </button>
                         </div>
                     </div>
@@ -289,7 +289,7 @@
                                 <div class="info-box info-green">
                                     <h4><i class="fas fa-arrow-down"></i> Como registrar uma entrada:</h4>
                                     <ol>
-                                        <li>Busque o material que está sendo devolvido</li>
+                                        <li>Busque o instrumento que está sendo devolvido</li>
                                         <li>Confirme o operador que está devolvendo</li>
                                         <li>Clique no botão "ENTRADA" para registrar</li>
                                     </ol>
